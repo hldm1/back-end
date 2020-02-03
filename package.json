@@ -1,0 +1,22 @@
+{
+  "name": "backend-test",
+  "description": "Backend Test",
+  "authors": "Hans Muller",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server-npm": "if [ ! -d keys ]; then mkdir keys; fi && if [ ! -d data ]; then mkdir data; fi && npm install && node server.js",
+    "server-yarn": "if [ ! -d keys ]; then mkdir keys; fi && if [ ! -d data ]; then mkdir data; fi && yarn && node server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0"
+  }
+}
